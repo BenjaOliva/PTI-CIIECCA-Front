@@ -294,8 +294,9 @@ export const chartExample1 = {
         },
         ticks: {
           callback: function(value) {
-            if (!(value % 10)) {
-              return '$' + value + 'k';
+            console.log('value', value)
+            if (!(value % 25)) {
+              return value;
             }
           }
         }
@@ -303,10 +304,10 @@ export const chartExample1 = {
     }
   },
   data: {
-    labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto'],
     datasets: [{
-      label: 'Performance',
-      data: [0, 20, 10, 30, 15, 40, 20, 60, 60]
+      label: 'PNC TREND',
+      data: [151, 108, 406, 405, 230, 150, 315, 200]
     }]
   }
 }
@@ -343,13 +344,10 @@ export const chartExample2 = {
     }
   },
   data: {
-    labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    datasets: [
-      {
-        label: "Sales",
-        data: [25, 20, 30, 22, 17, 29],
-        maxBarThickness: 10
-      }
-    ]
+    labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto'],
+    datasets: [{
+      label: 'asd',
+      data: [151, 108, 406, 405, 230, 150, 315, 200]
+    }]
   }
 }
